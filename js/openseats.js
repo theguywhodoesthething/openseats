@@ -7,6 +7,8 @@ $(document).ready(function() {
 
 var showPreferredContactMethod = function() {
 
+  console.log("in contact method")
+
     var preferredContactMethod = document.getElementById("passengerContact").value;
 
     var $passengerEmail = '<label for="passengerEmail">Email address</label><input type="email" class="form-control"  placeholder="Enter email">'
