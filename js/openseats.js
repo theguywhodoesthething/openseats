@@ -38,16 +38,17 @@ var buildOwnerForm = function() {
     $('#formDiv').empty();
     $('#formDiv').load('owner.html', function(){
       showPreferredContactMethod()
-      $( "#datepicker" ).datepicker();
     })
 }
 
 var addNewDate = function() {
 
+  console.log("called addNewDate")
+
   var $newDate = $("#datepicker").value;
 
   $("#dateDiv").append('<br><p>' + $newDate + '</p>')
 
-  $("datepicker").clearDate();
+  $("datepicker").val(null);
 
 }
