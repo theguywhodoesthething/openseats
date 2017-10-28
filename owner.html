@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <form name="PassengerForm" class="form-group">
+    <div class="form-group">
+      <label for="passengerMember">Are you a member of the NW Steelheaders?</label>
+      <select class="form-control" id="passengerMember">
+              <option>No</option>
+              <option>Yes</option>
+            </select>
+    </div>
+    <div class="form-group">
+      <label for="passengerDates">Which dates are you fishing?</label>
+      <input type="date" class="form-control" id="passengerDates">
+    </div>
+    <div class="form-group">
+      <div class="form-group">
+        <label for="passengerName">Boat Owner Name</label>
+        <input type="text" class="form-control" id="passengerName" placeholder="Enter boat owner name">
+      </div>
+      <label for="passengerContact">What’s the best way to contact you?</label>
+      <select class="form-control" onchange=showPreferredContactMethod() id="passengerContact">
+            <option>Email</option>
+            <option>Phone</option>
+            <option>Text</option>
+      </select>
+    </div>
+    <div class="form-group" id="passengerTel"></div>
+    <div class="form-group" id="passengerEmail"></div>
+    <div class="form-group">
+      <label for="location">Where are you fishing?</label><br>
+      <label class="checkbox-inline"><input type="checkbox" value="">Tillamook</label>
+      <label class="checkbox-inline"><input type="checkbox" value="">Astoria</label>
+      <label class="checkbox-inline"><input type="checkbox" value="">Portland</label>
+      <label class="checkbox-inline"><input type="checkbox" value="">Central Oregon</label>
+    </div>
+    <div class="form-group">
+      <label for="notes">Enter any extra info or special requests</label><br>
+      <textarea id="notes" name="notes" rows="8" cols="80"></textarea>
+    </div>
+    <button type="submit" name="button" class="btn btn-default">Submit</button>
+  </form>
+</body>
+
+</html>
