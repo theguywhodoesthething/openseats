@@ -2,32 +2,33 @@
 <html>
 
 <body>
-  <form name="PassengerForm" class="form-group">
+  <form name="OwnerForm" class="form-group">
     <div class="form-group">
-      <label for="passengerMember">Are you a member of the NW Steelheaders?</label>
-      <select class="form-control" id="passengerMember">
+      <label for="ownerMember">Are you a member of the NW Steelheaders?</label>
+      <select class="form-control" id="ownerMember">
               <option>No</option>
               <option>Yes</option>
             </select>
     </div>
-    <div class="form-group">
-      <label for="passengerDates">Which dates are you fishing?</label>
-      <input type="date" class="form-control" id="passengerDates">
+    <div class="form-group" id="dateDiv">
+      <label for="ownerDates">Which dates are you fishing?</label>
+      <input type="text" class="form-control" id="datepicker">
+      <button type="button" class="btn btn-default" name="button" id="addNewDateBtn" onclick="addNewDate()">Add Date</button>
     </div>
     <div class="form-group">
       <div class="form-group">
-        <label for="passengerName">Boat Owner Name</label>
-        <input type="text" class="form-control" id="passengerName" placeholder="Enter boat owner name">
+        <label for="ownerName">Boat Owner Name</label>
+        <input type="text" class="form-control" id="ownerName" placeholder="Enter boat owner name">
       </div>
-      <label for="passengerContact">What’s the best way to contact you?</label>
+      <label for="ownerContact">What’s the best way to contact you?</label>
       <select class="form-control" onchange=showPreferredContactMethod() id="preferredContactMethod">
             <option selected>Email</option>
             <option>Phone</option>
             <option>Text</option>
       </select>
     </div>
-    <div class="form-group" id="passengerTel"></div>
-    <div class="form-group" id="passengerEmail"></div>
+    <div class="form-group" id="telDiv"></div>
+    <div class="form-group" id="emailDiv"></div>
     <div class="form-group">
       <label for="location">Where are you fishing?</label><br>
       <label class="checkbox-inline"><input type="checkbox" value="">Tillamook</label>
