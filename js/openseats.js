@@ -34,6 +34,7 @@ var buildPassengerForm = function() {
     $('#formDiv').empty();
     $('#formDiv').load('passenger.html')
 
+    showPreferredContactMethod()
 }
 
 var buildOwnerForm = function() {
@@ -45,4 +46,5 @@ var buildOwnerForm = function() {
     $('#formDiv').empty();
     $('#formDiv').load('owner.html')
 
+    showPreferredContactMethod()
 }
