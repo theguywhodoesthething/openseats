@@ -9,7 +9,7 @@ var showPreferredContactMethod = function() {
 
   console.log("in contact method")
 
-    var preferredContactMethod = document.getElementById("passengerContact").value;
+    var preferredContactMethod = document.getElementById("preferredContactMethod").value;
 
     var $passengerEmail = '<label for="passengerEmail">Email address</label><input type="email" class="form-control"  placeholder="Enter email">'
     var $passengerTel = '<label for="passengerTel">Phone Number</label><input type="tel" class="form-control" placeholder="Enter phone number">'
@@ -32,9 +32,9 @@ var buildPassengerForm = function() {
     $('#buildPassengerBtn').addClass('active')
     $('#buildOwnerBtn').removeClass('active')
     $('#formDiv').empty();
-    $('#formDiv').load('passenger.html')
-
-    showPreferredContactMethod()
+    $('#formDiv').load('passenger.html', function(){
+      showPreferredContactMethod()
+    })
 }
 
 var buildOwnerForm = function() {
@@ -44,7 +44,7 @@ var buildOwnerForm = function() {
     $('#buildOwnerBtn').addClass('active')
     $('#buildPassengerBtn').removeClass('active')
     $('#formDiv').empty();
-    $('#formDiv').load('owner.html')
-
-    showPreferredContactMethod()
+    $('#formDiv').load('owner.html', function(){
+      showPreferredContactMethod()
+    })
 }
