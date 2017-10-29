@@ -27,7 +27,7 @@ var buildPassengerForm = function() {
     $('#formDiv').empty();
     $('#formDiv').load('passenger.html', function(){
       showPreferredContactMethod()
-      $( "#datepicker" ).datepicker();
+      $( "#datepicker" ).multiDatesPicker();
     })
 }
 
@@ -38,18 +38,6 @@ var buildOwnerForm = function() {
     $('#formDiv').empty();
     $('#formDiv').load('owner.html', function(){
       showPreferredContactMethod()
-      $( "#datepicker" ).datepicker();
+      $( "#datepicker" ).multiDatesPicker();
     })
-}
-
-var addNewDate = function() {
-
-  console.log("called addNewDate")
-
-  var $newDate = $("#datepicker").value;
-
-  $("#dateDiv").append('<br><p>' + $newDate + '</p>')
-
-  $("datepicker").val(null);
-
 }
