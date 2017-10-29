@@ -38,6 +38,7 @@ var buildOwnerForm = function() {
     $('#formDiv').empty();
     $('#formDiv').load('owner.html', function(){
       showPreferredContactMethod()
+      $( "#datepicker" ).datepicker();
     })
 }
 
