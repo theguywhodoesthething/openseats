@@ -4,20 +4,20 @@
 
 var showPreferredContactMethod = function() {
 
-    var $preferredContactMethod = $("#preferredContactMethod :selected").text()
+    var preferredContactMethod = $("#preferredContactMethod :selected").text()
 
-    console.log($preferredContactMethod)
+    console.log(preferredContactMethod)
 
     var passengerEmail = '<label for="passengerEmail">Email address</label><input type="email" class="form-control"  placeholder="Enter email">'
     var passengerTel = '<label for="passengerTel">Phone Number</label><input type="tel" class="form-control" placeholder="Enter phone number">'
 
-    if ($preferredContactMethod === "Email") {
-      $('#passengerEmail').append(passengerEmail)
-      $('#passengerTel').empty()
+    if (preferredContactMethod === "Email") {
+      $('#emailDiv').append(passengerEmail)
+      $('#telDiv').empty()
     } else {
-      $('#passengerTel').empty()
-      $('#passengerEmail').empty()
-      $('#passengerTel').append(passengerTel)
+      $('#telDiv').empty()
+      $('#emailDiv').empty()
+      $('#telDiv').append(passengerTel)
     }
 
 }
