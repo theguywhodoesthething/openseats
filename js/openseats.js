@@ -6,6 +6,8 @@ var showPreferredContactMethod = function() {
 
     var $preferredContactMethod = $("#preferredContactMethod").value;
 
+    console.log($preferredContactMethod)
+
     var passengerEmail = '<label for="passengerEmail">Email address</label><input type="email" class="form-control"  placeholder="Enter email">'
     var passengerTel = '<label for="passengerTel">Phone Number</label><input type="tel" class="form-control" placeholder="Enter phone number">'
 
