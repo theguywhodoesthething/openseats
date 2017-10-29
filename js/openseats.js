@@ -4,7 +4,7 @@
 
 var showPreferredContactMethod = function() {
 
-    var $preferredContactMethod = $("#preferredContactMethod").value;
+    var $preferredContactMethod = $("#preferredContactMethod").val;
 
     console.log($preferredContactMethod)
 
