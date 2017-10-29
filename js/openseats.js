@@ -6,9 +6,6 @@ var showPreferredContactMethod = function() {
 
     var preferredContactMethod = $("#preferredContactMethod :selected").text()
 
-    console.log(preferredContactMethod)
-    console.log(preferredContactMethod === "Email")
-
     var email = '<label">Email address</label><input type="email" class="form-control"  placeholder="Enter email">'
     var tel = '<label">Phone Number</label><input type="tel" class="form-control" placeholder="Enter phone number">'
 
