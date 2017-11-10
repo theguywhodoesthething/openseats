@@ -90,7 +90,10 @@
   <div style="width:80%;margin:auto">
     <form name="PassengerForm" class="form-group">
     <label>Which dates are you fishing?</label>
-    <div style="margin:auto" class="form-group" id="datepicker">
+    <div id="datepicker-container" style="text-align:center">
+      <div id="datepicker-center" style="display:inline-block;margin:0 auto">
+        <div id="datepicker"></div>
+      </div>
     </div>
       <label for="location">Where are you fishing?</label><br>
       <label class="checkbox-inline"><input type="checkbox" value="">Tillamook</label>
@@ -98,7 +101,9 @@
       <label class="checkbox-inline"><input type="checkbox" value="">Portland</label>
       <label class="checkbox-inline"><input type="checkbox" value="">Central Oregon</label>
     </div>
-    <button style="margin:auto" type="submit" name="button" class="text-center btn btn-xlarge">Submit</button>
+    <div class="text-center">
+    <button style="margin:auto" type="submit" name="button" class="btn btn-xlarge">Submit</button>
+  </div>
   </form>
 </div>
 </section>

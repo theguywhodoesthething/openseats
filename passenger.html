@@ -97,7 +97,10 @@
             </select>
     </div>
     <label>Which dates can you fish?</label>
-    <div style="margin:auto" class="form-group" id="datepicker">
+    <div id="datepicker-container" style="text-align:center">
+      <div id="datepicker-center" style="display:inline-block;margin:0 auto">
+        <div id="datepicker"></div>
+      </div>
     </div>
     <div class="form-group">
       <label for="passengerName">Passenger Name</label>
@@ -122,9 +125,13 @@
     </div>
     <div class="form-group">
       <label for="notes">Enter any extra info or special requests</label><br>
-      <textarea id="notes" name="notes" rows="8" cols="80"></textarea>
+      <div style="border-style:solid;border-width:thin">
+      <textarea id="notes" name="notes" rows="8" style="width:100%"></textarea>
     </div>
-    <button style="margin:auto" type="submit" name="button" class="text-center btn btn-xlarge">Submit</button>
+    </div>
+    <div class="text-center ">
+    <button style="margin:auto" type="submit" name="button" class="btn btn-xlarge">Submit</button>
+  </div>
   </form>
 </div>
 </section>
